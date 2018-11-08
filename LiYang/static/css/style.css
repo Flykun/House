@@ -1,0 +1,32 @@
+#navigation {
+    position: relative;
+    list-style: none;
+    background: #6BBE92;
+    font-weight: 400;
+    font-size: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0;
+    margin: 50px auto;
+}
+
+#navigation li {
+    font-size: 0.8rem;
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    z-index: 5;
+    min-width: 120px;
+
+}
+
+#navigation li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+li {
+    margin: 0;
+}

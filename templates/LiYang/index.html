@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>黎阳地产</title>
+  <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+</head>
+<body>
+
+<div>
+
+</div>
+
+<nav>
+  <ul id="navigation">
+    <li><a href="">主页</a></li>
+    <li><a href="">二手房</a></li>
+    <li><a href="">租房</a></li>
+    <li><a href="">联系我们</a></li>
+  </ul>
+</nav>
+
+
+<div>
+  <ul>
+    {% for house in houses %}
+    <li>
+    {{ house.message }}{{ house.address }}{{ house.area }}{{ house.price }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div></div>
+
+
+</body>
+</html>
